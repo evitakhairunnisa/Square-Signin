@@ -1,0 +1,376 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #FAFAFB !important;
+}
+
+body nav {
+    background: #FFFFFF;
+    box-shadow: inset 0px -1px 0px #E2E2EA;
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+.navbar-header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 18px;
+}
+
+.navbar-header a {
+    color: #44444F;
+}
+
+.navbar-header a:hover {
+    text-decoration: none;
+    color: #44444F;
+}
+
+.navbar-right .btn-secondary {
+    background: #F1F1F5;
+    border-radius: 10px;
+    border: none;
+    width: 86px;
+    height: 38px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #696974;
+    margin-right: 20px;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.search2-icon {
+    width: 24px;
+    display: none;
+}
+
+.navbar-right .btn-primary {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FAFAFB;
+    width: 86px;
+    height: 38px;
+    background: #0062FF;
+    border-radius: 10px;
+    border: 0;
+    margin-right: 20px;
+}
+
+.plus-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+.auth-notif {
+    display: inline-flex;
+}
+
+.auth-notif span {
+    position: absolute;
+    display: inline-flex;
+    width: 12px;
+    height: 12px;
+    background: #FC5A5A;
+    border-radius: 12px;
+    margin-left: 12px;
+}
+
+.notif-icon {
+    width: 18px;
+    height: 21px;
+    margin-right: 17px;
+}
+
+.profile {
+    width: 32px;
+    height: 32px;
+}
+
+.signin-auth {
+    margin-top: 100px;
+}
+
+.signin-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 56px;
+    font-weight: normal;
+    letter-spacing: 0.233333px;
+    color: #44444F;
+    text-align: center;
+}
+
+.signin-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.1px;
+    color: #92929D;
+    text-align: center;
+    margin-top: 22px;
+}
+
+.input-auth {
+    width: 560px;
+    height: 314px;
+    background: #FFFFFF;
+    box-shadow: 3px -5px 40px rgba(205, 205, 212, 0.1);
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group input {
+    border: none;
+    background: none;
+    width: 500px;
+    height: 48px;
+    border-radius: 10px;
+    border: 1px solid #92929D;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border: 1px solid #50B5FF;
+}
+
+.form-group input:valid {
+    border: 1px solid #50B5FF;
+}
+
+.form-group .text {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 0%;
+    left: 20px;
+    margin-top: -10px;
+    color: grey;
+    background-color: inherit;
+    transition: all .3s linear;
+    pointer-events: none;
+    margin-top: -12px;
+    background: #FFFFFF;
+    padding: 1px;
+}
+
+.form-group input:focus+.text,
+.form-group input:not(:invalid)+.text {
+    color: #50B5FF;
+    top: 0%;
+    margin-top: -12px;
+    background: #FFFFFF;
+    padding: 1px;
+}
+
+.input-auth form {
+    padding: 40px 30px 20px;
+}
+
+form .email {
+    margin-bottom: 30px;
+}
+
+.check {
+    margin-top: -20px;
+}
+
+.checkboxContainer input {
+    display: none;
+}
+
+.checkboxContainer {
+    display: inline-block;
+    padding-left: 25px;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #696974;
+    float: left;
+    margin-left: 30px;
+}
+
+.checkboxContainer .checkmark {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #eee;
+    position: absolute;
+    left: 0;
+    top: 3px;
+    border-radius: 3px;
+}
+
+.checkboxContainer input:checked+.checkmark {
+    background-color: #50B5FF;
+}
+
+.checkboxContainer:hover .checkmark {
+    background-color: #ccc;
+}
+
+.checkboxContainer input:checked+.checkmark:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 9px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.check a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    color: #50B5FF;
+    font-weight: bold;
+    float: right;
+    margin-right: 30px;
+}
+
+.check a:hover {
+    text-decoration: none;
+}
+
+.input-auth .btn-primary {
+    width: 120px;
+    height: 48px;
+    background: #0062FF;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #FAFAFB;
+    border: none;
+    float: right;
+    margin-right: 30px;
+    margin-top: 32px;
+}
+
+.footer-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #0062FF;
+    text-align: center;
+    margin-top: 35px;
+    padding-bottom: 40px;
+}
+
+.footer-text a:hover {
+    text-decoration: none;
+}
+
+@media screen and (max-width:500px) {
+    .input-auth {
+        width: 290px;
+        height: 257px;
+        margin-top: 20px;
+    }
+
+    .navbar-right .btn-secondary {
+        display: none;
+    }
+
+    .navbar-right .btn-primary {
+        display: none;
+    }
+
+    .auth-notif span {
+        display: none;
+    }
+
+    .notif-icon {
+        display: none;
+    }
+
+    .search2-icon {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    .input-auth form {
+        padding: 30px 15px 15px;
+    }
+
+    .form-group input {
+        width: 260px;
+        height: 42px;
+    }
+
+    form .email {
+        margin-bottom: 25px;
+    }
+
+    .form-group .text {
+        left: 15px;
+        font-size: 10px;
+        color: grey;
+        top: 0%;
+        margin-top: -8px;
+        background: #FFFFFF;
+        padding: 1px;
+    }
+
+    .form-group input:focus+.text,
+    .form-group input:not(:invalid)+.text {
+        font-size: 10px;
+        color: #50B5FF;
+        top: 0%;
+        margin-top: -8px;
+        background: #FFFFFF;
+        padding: 1px;
+    }
+
+    .checkboxContainer {
+        font-size: 12px;
+        margin-left: 15px;
+    }
+
+    .checkboxContainer .checkmark {
+        width: 12.8px;
+        height: 12.8px;
+    }
+
+    .check a {
+        font-size: 12px;
+        margin-right: 15px;
+    }
+
+    .input-auth .btn-primary {
+        width: 120px;
+        height: 42px;
+        font-size: 12px;
+        margin-top: 25px;
+        margin-right: 15px;
+    }
+
+    .footer-text {
+        margin-top: 26px;
+    }
+}
